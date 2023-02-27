@@ -1,0 +1,11 @@
+name: Github CI
+# Configura servidor de CI para executar o pipeline de tarefas abaixo (jobs) quando 
+# um push ou pull request for realizado tendo como alvo a branch main
+on:
+  push:
+    branches:
+      -main
+  pull_request:
+    branches:
+      -main
+jobs:
